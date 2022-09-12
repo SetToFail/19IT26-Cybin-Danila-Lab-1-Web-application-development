@@ -7,9 +7,9 @@
 </head>
 <body>
 	<input type="text" id="x" value="Ввод x">
-	<br>
+	<br><br>
 	<input type="text" id="n" value="Ввод n">
-	<br>
+	<br><br>
 	<input type="submit" onclick="summ()">
 	<script type="text/javascript">
 		function summ()
