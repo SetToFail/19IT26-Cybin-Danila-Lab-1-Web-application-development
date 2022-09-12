@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cybin Danila, Laboratory work 1</title>
+	<title>Cybin Danila, Laboratory work 2</title>
 </head>
 <body>
 	<input type="text" id="x" value="Ввод x">
