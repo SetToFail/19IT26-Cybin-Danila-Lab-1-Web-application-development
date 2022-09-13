@@ -8,18 +8,30 @@
 <body>
 	<input type="text" id="arr" value="Добавление в массив">
 	<br>
-	<input type="submit" onclick="arr()">
+	<br>
+	<input type="submit" onclick="arr()" value="Добавить элемент">
+	<input type="submit" onclick="result()" value="Результат">
 	<script type="text/javascript">
 		var array = [];
+		var arr;
 		function arr()
 		{
 			var arr = Number(document.getElementById("arr").value);
 			array.push(arr);
+		}
+		function result()
+		{
+			for (var i = array.length - 1; i >= 0; i--) 
+			{
+				if (isNaN(array[i])) 
+				{
+					array.splice(i, 1);
+				}
+			}
 			var min = Math.min(...array); 
 			var max = Math.max(...array);
-			var summ = min + max;
+			var summ = Number(min) + Number(max);
 			console.log(summ);
-			console.log(array);
 		}
 	</script>
 </body>
